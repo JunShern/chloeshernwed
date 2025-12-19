@@ -1,50 +1,252 @@
-Table 1,,Table 2,,Table 3,,Table 4,,Table 5,,Table 6
-Chloe Lee,,Jocelyn Lee,,Carmen Loh,,Bryan Yong,,Yew Wai Leong,,Jansen Teng
-Lee Ah Kaw,,Ho Shi Chong,,Justin Goh,,Raffles Ng,,Yew Wai Leong +1,,Jansen Teng +1
-Wong Han Yen,,Ho En Yao,,Wen Wei Lee,,Raffles Ng +1,,Eu Shern Toh,,Nicholas Oon
-Lee Choon Hua,,Ho Yu Zhe,,Wen Wei Lee +1,,Loga,,Siew Yin Law,,Wei It Kuan-Tzuo
-Yong Wei Ling,,Anita Foo,,Adrian Chew,,Mohan,,Siew Yin Law +1,,Wei It Kuan-Tzuo +1
-Jun Shern Chan,,Lee Yun Kei,,Jade Tan,,Yan Wei Tan,,Erica Goh,,Jia Zheng Woo
-Leng Wai Chan,,Lee Chuok Yin,,Karan,,Deniz Ak,,Erica Goh +1,,Zhi Xiong Law
-Sim Chan,,Lee Yun Sum,,Jee Kwan Ng,,Deniz Ak +1,,Andy Ting,,Zhong Yao Kuah
-Leng Kee Chan,,Ah Pak,,Chris Tock,,Denise Eng,,Tien Ming Yoon,,Eu Chian Tan
-Carina,,Soon Ann Lee,,Chris Tock +1,,Denise Eng +1,,Martin Wiecek,,Michelle Chan
-,,,,,,,,,,
-,,,,,,,,,,
-Table 7,,Table 8,,Table 9,,Table 10,,Table 11,,Table 12
-Tau Teng Chong,,Eric Soo,,James Aung,,Boon,,Jamin Chan,,Ah Liang
-Chuok Ying Choy,,Jia En,,Dane,,Boon +1,,Jonathan Chew,,Ah Liang Wife
-Chew Hou Ng,,Jia En +1,,Ollie,,Yi Ting Woon,,Ashley Chew,,Ah Liang Son
-Wei Der Lim,,Victor,,Giulio,,Yi Ting Woon +1,,Joo Ann Loong,,Soon Fong Lee
-Dawn Neo,,Chris Leong,,Aaron Low,,Qing Wei,,Nicholas Chow,,Zhi Siew Pang
-Lisa Yang,,Chris Leong +1,,Ziyi,,Ragini Asohan,,Hayley Chow,,Da Gu
-Lisa Yang +1,,Jeremy Sze,,Ziyi +1,,Ragini Asohan +1,,Kar Yuan Thum,,Bao Ling Biao Jie
-Lisa Yang +2,,Dylan Tan,,Mo Putera,,Pei Yee Loh,,Justin Lee,,Er Gu
-Lisa Yang +3,,Twinkle Lok,,Ian Chan,,Zhi Qiong Lim,,Wei Yi Tan,,Er Gu Zhang
-Joshua,,Twinkle Lok +1,,Ian Chan +1,,Zhi Qiong Lim +1,,,,Da Biao Jie
-,,,,,,,,,,
-,,,,,,,,,,
-Table 13,,Table 14,,Table 15,,Table 16,,Table 17,,Table 18
-Yong Jie,,Yee Wei Tan,,David Chong,,Jun Kit Chan,,Sabrina Chow,,Richard Chow
-Er Yi,,Huei Jean Lim,,Ai Leng Pua,,Kat,,Simon Loong,,Camy Kan
-Er Yi Zhang,,Wei Shuen Tan,,Elizabeth Chong,,Julian Seow,,Beng Hong Chew,,Robert Chow
-Chia Yee Jie,,Wei Lynn Tan,,Jacq Chow,,Penny Seow,,Shirley Chow,,Marjorie Chow
-Ah See Jie Fu,,Wei Ren Tan,,Ivin Low,,Jing Yao Seow,,Peng Sam Tan,,Sean Chow
-Shui Fong Yee,,Wei Jet Tan,,Jonah Chow,,Ethan Chan,,Sharron Woo,,Yuet Fung Chow
-Cheryl Ong,,Yee Juinn Tan,,Tin Chuai Chong,,Evan Chan,,Elena Chow,,Jerry Lee
-Cheryl Ong +1,,Simone Loh,,Anissa Woo,,Shyenne Liaw,,Stephen Chow,,Ivy Chow
-Joey Tan,,Yee Hou Tan,,Joo Lee Loong,,Leng Sun Chan,,Cherie Ng,,Chow Moy (Har Gu)
-Joey Tan +1,,Allison,,Philip Lok,,Christina,,Beng Ghi Tan,,Kevin Thum
-,,,,,,,,,,
-,,,,,,,,,,
-Table 19,,Table 20,,Table 21,,Table 22,,Table 23,,
-Michelle Chan,,Tony Teoh,,Loke Choy Lim,,Kon Bee Wong,,Lup Seong Kam,,
-Paul Seow,,Kong Yee Law,,Loke Choy Lim +1,,Kon Bee Wong +1,,Lup Seong Kam +1,,
-Lisa Chan,,"Mrs Law, Chow Fah Yee",,Tho Huat  Yap,,Eng Kar Ong,,Hock Aun Khoo,,
-David Liaw,,Mary Tan,,Tho Huat  Yap +1,,Sin Koon Yan,,Hock Aun Khoo +1,,
-Brenda Yong,,Jonathan Tan,,Hock Kan Chen,,King Ho Ng,,Kee Siong Sia,,
-Kok Pin Yong,,Chee Seng Lim,,Hock Kan Chen +1,,King Ho Ng +1,,Kee Siong Sia +1,,
-Esther Loke,,"Mrs Lim, Peggy Yeo",,Heng Tien Dr Lim,,Peng Seng Lee,,Kian Teck Lee,,
-Alex Goh,,Jeffrey Si,,Heng Tien Dr Lim +1,,Peng Seng Lee +1,,Sarojini Devi,,
-Kwong Wah Ho,,Chris Chan,,Joseph Siaw,,Tuck Koe Lam,,Cliff Lee,,
-Kwong Wah Ho +1,,,,Joseph Siaw +1,,Tuck Koe Lam +1,,Cliff Lee +1,,
+Name,Side,Group,Table
+,,,
+Chloe Lee,Bride,Family,VIP
+Lee Ah Kaw,Bride,Family,VIP
+Wong Han Yen,Bride,Family,VIP
+Lee Choon Hua,Bride,Family,VIP
+Yong Wei Ling,Bride,Family,VIP
+Jun Shern Chan,Groom,Family,VIP
+Leng Wai Chan,Groom,Family,VIP
+Sim Chan,Groom,Family,VIP
+Leng Kee Chan,Groom,Family (Dad's side),VIP
+Carina,Groom,Family (Dad's side),VIP
+,,,
+Jocelyn Lee,Bride,Family (Mum's side),21
+Ho Shi Chong,Bride,Family (Mum's side),21
+Ho En Yao,Bride,Family (Mum's side),21
+Ho Yu Zhe,Bride,Family (Mum's side),21
+Anita Foo,Bride,Family (Mum's side),21
+Lee Yun Kei,Bride,Family (Mum's side),21
+Lee Chuok Yin,Bride,Family (Mum's side),21
+Lee Yun Sum,Bride,Family (Mum's side),21
+Ah Pak,Bride,Family (Mum's side),21
+Soon Ann Lee,Bride,Family (Mum's side),21
+,,,
+Carmen Loh,Bride,Accenture,15
+Justin Goh,Bride,Accenture,15
+Wen Wei Lee,Bride,Accenture,15
+Wen Wei Lee +1,Bride,Accenture,15
+Adrian Chew,Bride,Accenture,15
+Jade Tan,Bride,Accenture,15
+Karan,Bride,Accenture,15
+Jee Kwan Ng,Bride,"Imperial,ICAAM",15
+Chris Tock,Bride,"Imperial,ICAAM",15
+Chris Tock +1,Bride,"Imperial,ICAAM",15
+,,,
+Bryan Yong,Bride,Accenture,18
+Raffles Ng,Bride,Accenture,18
+Raffles Ng +1,Bride,Accenture,18
+Loga,Bride,Accenture,18
+Mohan,Bride,Accenture,18
+Yan Wei Tan,Bride,Accenture,18
+Deniz Ak,Bride,Imperial,18
+Deniz Ak +1,Bride,Imperial,18
+Denise Eng,Bride,Imperial,18
+Denise Eng +1,Bride,Imperial,18
+,,,
+Yew Wai Leong,"Bride,Groom",Imperial,14
+Yew Wai Leong +1,"Bride,Groom",Imperial,14
+Eu Shern Toh,"Bride,Groom",Imperial,14
+Siew Yin Law,"Bride,Groom",Imperial,14
+Siew Yin Law +1,"Bride,Groom",Imperial,14
+Erica Goh,"Bride,Groom",Imperial,14
+Erica Goh +1,"Bride,Groom",Imperial,14
+Andy Ting,"Bride,Groom",Imperial,14
+Tien Ming Yoon,"Bride,Groom",Imperial,14
+Martin Wiecek,Bride,Imperial,14
+,,,
+Jansen Teng,"Bride,Groom",Imperial,16
+Jansen Teng +1,"Bride,Groom",Imperial,16
+Nicholas Oon,"Bride,Groom",Imperial,16
+Wei It Kuan-Tzuo,"Bride,Groom",Imperial,16
+Wei It Kuan-Tzuo +1,"Bride,Groom",Imperial,16
+Jia Zheng Woo,"Bride,Groom",Imperial,16
+Zhi Xiong Law,"Bride,Groom",Imperial,16
+Zhong Yao Kuah,"Bride,Groom",Imperial,16
+Eu Chian Tan,"Bride,Groom",Imperial,16
+Michelle Chan,"Bride,Groom",Imperial,16
+,,,
+Tau Teng Chong,"Bride,Groom",Imperial,17
+Chuok Ying Choy,"Bride,Groom",Imperial,17
+Chew Hou Ng,"Bride,Groom",Imperial,17
+Wei Der Lim,"Bride,Groom",Imperial,17
+Dawn Neo,Bride,"GFP,EA",17
+Lisa Yang,Bride,"GFP,EA",17
+Lisa Yang +1,Bride,"GFP,EA",17
+Lisa Yang +2,Bride,"GFP,EA",17
+Lisa Yang +3,Bride,"GFP,EA",17
+Joshua Wong,Bride,LSHTM,17
+,,,
+Eric Soo,Groom,WMS,13
+Jia En,Groom,WMS,13
+Jia En +1,Groom,WMS,13
+Victor,Groom,WMS,13
+Chris Leong,Groom,WMS,13
+Chris Leong +1,Groom,WMS,13
+Jeremy Sze,Groom,WMS,13
+Dylan Tan,Groom,WMS,13
+Twinkle Lok,Bride,Sunway College,13
+Twinkle Lok +1,Bride,Sunway College,13
+,,,
+Ian Chan,Groom,Family,9
+Ian Chan +1,Groom,Family,9
+James Aung,Groom,"DC Evals,EA",9
+Dane,Groom,"DC Evals,EA",9
+Ollie,Groom,"DC Evals,EA",9
+Giulio,Groom,"DC Evals,EA",9
+Aaron Low,Groom,"Motional,Imperial,WMS",9
+Ziyi Chong,Groom,Motional,9
+Ziyi Chong +1,Groom,Motional,9
+Mo Putera,Bride,"ARMoR,EA",9
+,,,
+Boon,Bride,Sekolah Iskandar Shah,20
+Boon +1,Bride,Sekolah Iskandar Shah,20
+Yi Ting Woon,Bride,Sekolah Iskandar Shah,20
+Yi Ting Woon +1,Bride,Sekolah Iskandar Shah,20
+Qing Wei,Bride,Sekolah Iskandar Shah,20
+Ragini Asohan,Bride,Sekolah Iskandar Shah,20
+Ragini Asohan +1,Bride,Sekolah Iskandar Shah,20
+Pei Yee Loh,Bride,Sekolah Iskandar Shah,20
+Zhi Qiong Lim,Bride,Sekolah Iskandar Shah,20
+Zhi Qiong Lim +1,Bride,Sekolah Iskandar Shah,20
+,,,
+Jamin Chan,Groom,Family (Mum's side),5
+Jonathan Chew,Groom,Family (Mum's side),5
+Ashley Chew,Groom,Family (Mum's side),5
+Joo Ann Loong,Groom,Family (Mum's side),5
+Nicholas Chow,Groom,Family (Mum's side),5
+Hayley Chow,Groom,Family (Mum's side),5
+Kar Yuan Thum,Groom,Family (Mum's side),5
+Justin Lee,Groom,Family (Mum's side),5
+Wei Yi Tan,Groom,Family (Mum's side),5
+,,,
+Ah Liang,Bride,Family (Mum's side),19
+Ah Liang Wife,Bride,Family (Mum's side),19
+Ah Liang Son,Bride,Family (Mum's side),19
+Soon Fong Lee,Bride,Family (Mum's side),19
+Zhi Siew Pang,Bride,Family (Mum's side),19
+Da Gu,Bride,Family (Mum's side),19
+Bao Ling Biao Jie,Bride,Family (Mum's side),19
+Er Gu,Bride,Family (Mum's side),19
+Er Gu Zhang,Bride,Family (Mum's side),19
+Da Biao Jie,Bride,Family (Mum's side),19
+,,,
+Yong Jie,Bride,Family (Mum's side),22
+Er Yi,Bride,Family (Mum's side),22
+Er Yi Zhang,Bride,Family (Mum's side),22
+Chia Yee Jie,Bride,Family (Mum's side),22
+Ah See Jie Fu,Bride,Family (Mum's side),22
+Shui Fong Yee,Bride,Family (Mum's side),22
+Cheryl Ong,Bride,AFS,22
+Cheryl Ong +1,Bride,AFS,22
+Joey Tan,Bride,AFS,22
+Joey Tan +1,Bride,AFS,22
+,,,
+Yee Wei Tan,Groom,Family (Mum's side),10
+Huei Jean Lim,Groom,Family (Mum's side),10
+Wei Shuen Tan,Groom,Family (Mum's side),10
+Wei Lynn Tan,Groom,Family (Mum's side),10
+Wei Ren Tan,Groom,Family (Mum's side),10
+Wei Jet Tan,Groom,Family (Mum's side),10
+Yee Juinn Tan,Groom,Family (Mum's side),10
+Simone Loh,Groom,Family (Mum's side),10
+Yee Hou Tan,Groom,Family (Mum's side),10
+Allison,Groom,Family (Mum's side),10
+,,,
+David Chong,Groom,Family (Mum's side),11
+Ai Leng Pua,Groom,Family (Mum's side),11
+Elizabeth Chong,Groom,Family (Mum's side),11
+Jacq Chow,Groom,Family (Mum's side),11
+Ivin Low,Groom,Family (Mum's side),11
+Jonah Chow,Groom,Family (Mum's side),11
+Tin Chuai Chong,Groom,Family (Mum's side),11
+Anissa Woo,Groom,Family (Mum's side),11
+Joo Lee Loong,Groom,Family (Mum's side),11
+Philip Lok,Groom,Family (Mum's side),11
+,,,
+Jun Kit Chan,Groom,Family (Dad's side),4
+Kat,Groom,Family (Dad's side),4
+Julian Seow,Groom,Family (Dad's side),4
+Penny Seow,Groom,Family (Dad's side),4
+Jing Yao Seow,Groom,Family (Dad's side),4
+Ethan Chan,Groom,Family (Dad's side),4
+Evan Chan,Groom,Family (Dad's side),4
+Shyenne Liaw,Groom,Family (Dad's side),4
+Leng Sun Chan,Groom,Family (Dad's side),4
+Christina,Groom,Family (Dad's side),4
+,,,
+Sabrina Chow,Groom,Family (Mum's side),6
+Simon Loong,Groom,Family (Mum's side),6
+Beng Hong Chew,Groom,Family (Mum's side),6
+Shirley Chow,Groom,Family (Mum's side),6
+Peng Sam Tan,Groom,Family (Mum's side),6
+Sharron Woo,Groom,Family (Mum's side),6
+Elena Chow,Groom,Family (Mum's side),6
+Stephen Chow,Groom,Family (Mum's side),6
+Cherie Ng,Groom,Family (Mum's side),6
+Beng Ghi Tan,Groom,Family (Mum's side),6
+,,,
+Richard Chow,Groom,Family (Mum's side),12
+Camy Kan,Groom,Family (Mum's side),12
+Robert Chow,Groom,Family (Mum's side),12
+Marjorie Chow,Groom,Family (Mum's side),12
+Sean Chow,Groom,Family (Mum's side),12
+Yuet Fung Chow,Groom,Family (Mum's side),12
+Jerry Lee,Groom,Family (Mum's side),12
+Ivy Chow,Groom,Family (Mum's side),12
+Chow Moy (Har Gu),Groom,Family (Mum's side),12
+Kevin Thum,Groom,Family (Mum's side),12
+,,,
+Michelle Chan,Groom,Family (Dad's side),3
+Paul Seow,Groom,Family (Dad's side),3
+Lisa Chan,Groom,Family (Dad's side),3
+David Liaw,Groom,Family (Dad's side),3
+Brenda Yong,Groom,Family (Dad's side),3
+Kok Pin Yong,Groom,Family (Dad's side),3
+Esther Loke,Groom,Family (Dad's side),3
+Alex Goh,Groom,Family (Dad's side),3
+Kwong Wah Ho,Groom,Family (Dad's side),3
+Kwong Wah Ho +1,Groom,Family (Dad's side),3
+,,,
+Cliff Lee,Groom,Dad's friends,2
+Cliff Lee +1,Groom,Dad's friends,2
+Tony Teoh,Groom,Dad's friends,2
+Yan Sin Koon,Groom,Dad's friends,2
+Joseph Siaw,Groom,Dad's friends,2
+Joseph Siaw +1,Groom,Dad's friends,2
+Lee Kian Teck,Groom,Dad's friends,2
+Jeffrey Si,Groom,Dad's friends,2
+Chris Chan,Groom,Dad's friends,2
+,,,
+Lup Seong Kam,Groom,Dad's friends,1
+Lup Seong Kam +1,Groom,Dad's friends,1
+Hock Aun Khoo,Groom,Dad's friends,1
+Hock Aun Khoo +1,Groom,Dad's friends,1
+Kee Siong Sia,Groom,Dad's friends,1
+Kee Siong Sia +1,Groom,Dad's friends,1
+Lam Tuck Koe,Groom,Dad's friends,1
+Lam Tuck Koe +1,Groom,Dad's friends,1
+Lee Peng Seng,Groom,Dad's friends,1
+Lee Peng Seng +1,Groom,Dad's friends,1
+,,,
+Loke Choy Lim,Groom,Dad's friends,7
+Loke Choy Lim +1,Groom,Dad's friends,7
+Tho Huat Yap,Groom,Dad's friends,7
+Tho Huat Yap +1,Groom,Dad's friends,7
+Hock Kan Chen,Groom,Dad's friends,7
+Hock Kan Chen +1,Groom,Dad's friends,7
+Heng Tien Dr Lim,Groom,Dad's friends,7
+Heng Tien Dr Lim +1,Groom,Dad's friends,7
+Wong Kon Bee,Groom,Dad's friends,7
+Wong Kon Bee +1,Groom,Dad's friends,7
+,,,
+Eng Kar Ong,Groom,Dad's friends,8
+Kong Yee Law,Groom,Dad's friends,8
+"Mrs Law, Chow Fah Yee",Groom,Dad's friends,8
+Mary Tan,Groom,Dad's friends,8
+Jonathan Tan,Groom,Dad's friends,8
+Chee Seng Lim,Groom,Dad's friends,8
+"Mrs Lim, Peggy Yeo",Groom,Dad's friends,8
+Ng King Ho,Groom,Dad's friends,8
+Ng King Ho +1,Groom,Dad's friends,8
+Sarojini Devi,Groom,Dad's friends,8

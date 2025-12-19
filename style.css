@@ -201,6 +201,78 @@ body {
   margin: 0 auto;
 }
 
+/* Seating Filters */
+.seating-filters {
+  margin-bottom: 1.5rem;
+}
+
+#guest-search {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+#guest-search:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+#guest-search::placeholder {
+  color: var(--color-muted);
+}
+
+.filter-group {
+  margin-bottom: 0.75rem;
+}
+
+.filter-label {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  padding: 0.375rem 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pill:hover {
+  border-color: var(--color-accent);
+}
+
+.pill.active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.guest-highlight {
+  background: #fff3cd;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.table-card.hidden {
+  display: none;
+}
+
 /* Seating Tables */
 .tables-grid {
   display: grid;
