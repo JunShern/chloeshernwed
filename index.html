@@ -167,237 +167,71 @@
       });
     });
 
-    // Guest data
-    const guests = [
-      {name:"Chloe Lee",sides:["Bride"],groups:["Family"],table:"VIP"},
-      {name:"Lee Ah Kaw",sides:["Bride"],groups:["Family"],table:"VIP"},
-      {name:"Wong Han Yen",sides:["Bride"],groups:["Family"],table:"VIP"},
-      {name:"Lee Choon Hua",sides:["Bride"],groups:["Family"],table:"VIP"},
-      {name:"Yong Wei Ling",sides:["Bride"],groups:["Family"],table:"VIP"},
-      {name:"Jun Shern Chan",sides:["Groom"],groups:["Family"],table:"VIP"},
-      {name:"Leng Wai Chan",sides:["Groom"],groups:["Family"],table:"VIP"},
-      {name:"Sim Chan",sides:["Groom"],groups:["Family"],table:"VIP"},
-      {name:"Leng Kee Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"VIP"},
-      {name:"Carina",sides:["Groom"],groups:["Family (Dad's side)"],table:"VIP"},
-      {name:"Jocelyn Lee",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Ho Shi Chong",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Ho En Yao",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Ho Yu Zhe",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Anita Foo",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Lee Yun Kei",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Lee Chuok Yin",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Lee Yun Sum",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Ah Pak",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Soon Ann Lee",sides:["Bride"],groups:["Family (Mum's side)"],table:"21"},
-      {name:"Carmen Loh",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Justin Goh",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Wen Wei Lee",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Wen Wei Lee +1",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Adrian Chew",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Jade Tan",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Karan",sides:["Bride"],groups:["Accenture"],table:"15"},
-      {name:"Jee Kwan Ng",sides:["Bride"],groups:["Imperial","ICAAM"],table:"15"},
-      {name:"Chris Tock",sides:["Bride"],groups:["Imperial","ICAAM"],table:"15"},
-      {name:"Chris Tock +1",sides:["Bride"],groups:["Imperial","ICAAM"],table:"15"},
-      {name:"Bryan Yong",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Raffles Ng",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Raffles Ng +1",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Loga",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Mohan",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Yan Wei Tan",sides:["Bride"],groups:["Accenture"],table:"18"},
-      {name:"Deniz Ak",sides:["Bride"],groups:["Imperial"],table:"18"},
-      {name:"Deniz Ak +1",sides:["Bride"],groups:["Imperial"],table:"18"},
-      {name:"Denise Eng",sides:["Bride"],groups:["Imperial"],table:"18"},
-      {name:"Denise Eng +1",sides:["Bride"],groups:["Imperial"],table:"18"},
-      {name:"Yew Wai Leong",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Yew Wai Leong +1",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Eu Shern Toh",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Siew Yin Law",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Siew Yin Law +1",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Erica Goh",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Erica Goh +1",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Andy Ting",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Tien Ming Yoon",sides:["Bride","Groom"],groups:["Imperial"],table:"14"},
-      {name:"Martin Wiecek",sides:["Bride"],groups:["Imperial"],table:"14"},
-      {name:"Jansen Teng",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Jansen Teng +1",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Nicholas Oon",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Wei It Kuan-Tzuo",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Wei It Kuan-Tzuo +1",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Jia Zheng Woo",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Zhi Xiong Law",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Zhong Yao Kuah",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Eu Chian Tan",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Michelle Chan",sides:["Bride","Groom"],groups:["Imperial"],table:"16"},
-      {name:"Tau Teng Chong",sides:["Bride","Groom"],groups:["Imperial"],table:"17"},
-      {name:"Chuok Ying Choy",sides:["Bride","Groom"],groups:["Imperial"],table:"17"},
-      {name:"Chew Hou Ng",sides:["Bride","Groom"],groups:["Imperial"],table:"17"},
-      {name:"Wei Der Lim",sides:["Bride","Groom"],groups:["Imperial"],table:"17"},
-      {name:"Dawn Neo",sides:["Bride"],groups:["GFP","EA"],table:"17"},
-      {name:"Lisa Yang",sides:["Bride"],groups:["GFP","EA"],table:"17"},
-      {name:"Lisa Yang +1",sides:["Bride"],groups:["GFP","EA"],table:"17"},
-      {name:"Lisa Yang +2",sides:["Bride"],groups:["GFP","EA"],table:"17"},
-      {name:"Lisa Yang +3",sides:["Bride"],groups:["GFP","EA"],table:"17"},
-      {name:"Joshua Wong",sides:["Bride"],groups:["LSHTM"],table:"17"},
-      {name:"Eric Soo",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Jia En",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Jia En +1",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Victor",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Chris Leong",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Chris Leong +1",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Jeremy Sze",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Dylan Tan",sides:["Groom"],groups:["WMS"],table:"13"},
-      {name:"Twinkle Lok",sides:["Bride"],groups:["Sunway College"],table:"13"},
-      {name:"Twinkle Lok +1",sides:["Bride"],groups:["Sunway College"],table:"13"},
-      {name:"Ian Chan",sides:["Groom"],groups:["Family"],table:"9"},
-      {name:"Ian Chan +1",sides:["Groom"],groups:["Family"],table:"9"},
-      {name:"James Aung",sides:["Groom"],groups:["DC Evals","EA"],table:"9"},
-      {name:"Dane",sides:["Groom"],groups:["DC Evals","EA"],table:"9"},
-      {name:"Ollie",sides:["Groom"],groups:["DC Evals","EA"],table:"9"},
-      {name:"Giulio",sides:["Groom"],groups:["DC Evals","EA"],table:"9"},
-      {name:"Aaron Low",sides:["Groom"],groups:["Motional","Imperial","WMS"],table:"9"},
-      {name:"Ziyi Chong",sides:["Groom"],groups:["Motional"],table:"9"},
-      {name:"Ziyi Chong +1",sides:["Groom"],groups:["Motional"],table:"9"},
-      {name:"Mo Putera",sides:["Bride"],groups:["ARMoR","EA"],table:"9"},
-      {name:"Boon",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Boon +1",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Yi Ting Woon",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Yi Ting Woon +1",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Qing Wei",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Ragini Asohan",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Ragini Asohan +1",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Pei Yee Loh",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Zhi Qiong Lim",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Zhi Qiong Lim +1",sides:["Bride"],groups:["Sekolah Iskandar Shah"],table:"20"},
-      {name:"Jamin Chan",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Jonathan Chew",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Ashley Chew",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Joo Ann Loong",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Nicholas Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Hayley Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Kar Yuan Thum",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Justin Lee",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Wei Yi Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"5"},
-      {name:"Ah Liang",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Ah Liang Wife",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Ah Liang Son",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Soon Fong Lee",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Zhi Siew Pang",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Da Gu",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Bao Ling Biao Jie",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Er Gu",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Er Gu Zhang",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Da Biao Jie",sides:["Bride"],groups:["Family (Mum's side)"],table:"19"},
-      {name:"Yong Jie",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Er Yi",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Er Yi Zhang",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Chia Yee Jie",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Ah See Jie Fu",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Shui Fong Yee",sides:["Bride"],groups:["Family (Mum's side)"],table:"22"},
-      {name:"Cheryl Ong",sides:["Bride"],groups:["AFS"],table:"22"},
-      {name:"Cheryl Ong +1",sides:["Bride"],groups:["AFS"],table:"22"},
-      {name:"Joey Tan",sides:["Bride"],groups:["AFS"],table:"22"},
-      {name:"Joey Tan +1",sides:["Bride"],groups:["AFS"],table:"22"},
-      {name:"Yee Wei Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Huei Jean Lim",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Wei Shuen Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Wei Lynn Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Wei Ren Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Wei Jet Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Yee Juinn Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Simone Loh",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Yee Hou Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"Allison",sides:["Groom"],groups:["Family (Mum's side)"],table:"10"},
-      {name:"David Chong",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Ai Leng Pua",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Elizabeth Chong",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Jacq Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Ivin Low",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Jonah Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Tin Chuai Chong",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Anissa Woo",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Joo Lee Loong",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Philip Lok",sides:["Groom"],groups:["Family (Mum's side)"],table:"11"},
-      {name:"Jun Kit Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Kat",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Julian Seow",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Penny Seow",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Jing Yao Seow",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Ethan Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Evan Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Shyenne Liaw",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Leng Sun Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Christina",sides:["Groom"],groups:["Family (Dad's side)"],table:"4"},
-      {name:"Sabrina Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Simon Loong",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Beng Hong Chew",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Shirley Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Peng Sam Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Sharron Woo",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Elena Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Stephen Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Cherie Ng",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Beng Ghi Tan",sides:["Groom"],groups:["Family (Mum's side)"],table:"6"},
-      {name:"Richard Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Camy Kan",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Robert Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Marjorie Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Sean Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Yuet Fung Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Jerry Lee",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Ivy Chow",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Chow Moy (Har Gu)",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Kevin Thum",sides:["Groom"],groups:["Family (Mum's side)"],table:"12"},
-      {name:"Michelle Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Paul Seow",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Lisa Chan",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"David Liaw",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Brenda Yong",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Kok Pin Yong",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Esther Loke",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Alex Goh",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Kwong Wah Ho",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Kwong Wah Ho +1",sides:["Groom"],groups:["Family (Dad's side)"],table:"3"},
-      {name:"Cliff Lee",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Cliff Lee +1",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Tony Teoh",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Yan Sin Koon",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Joseph Siaw",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Joseph Siaw +1",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Lee Kian Teck",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Jeffrey Si",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Chris Chan",sides:["Groom"],groups:["Dad's friends"],table:"2"},
-      {name:"Lup Seong Kam",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Lup Seong Kam +1",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Hock Aun Khoo",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Hock Aun Khoo +1",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Kee Siong Sia",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Kee Siong Sia +1",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Lam Tuck Koe",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Lam Tuck Koe +1",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Lee Peng Seng",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Lee Peng Seng +1",sides:["Groom"],groups:["Dad's friends"],table:"1"},
-      {name:"Loke Choy Lim",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Loke Choy Lim +1",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Tho Huat Yap",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Tho Huat Yap +1",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Hock Kan Chen",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Hock Kan Chen +1",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Heng Tien Dr Lim",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Heng Tien Dr Lim +1",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Wong Kon Bee",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Wong Kon Bee +1",sides:["Groom"],groups:["Dad's friends"],table:"7"},
-      {name:"Eng Kar Ong",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Kong Yee Law",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Mrs Law, Chow Fah Yee",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Mary Tan",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Jonathan Tan",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Chee Seng Lim",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Mrs Lim, Peggy Yeo",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Ng King Ho",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Ng King Ho +1",sides:["Groom"],groups:["Dad's friends"],table:"8"},
-      {name:"Sarojini Devi",sides:["Groom"],groups:["Dad's friends"],table:"8"}
-    ];
+    // Google Sheet URL - publish your sheet as CSV and paste the URL here
+    const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRl9p56IJOSaZ2Iz6IzcsLBobjIhXo9I5Sfg3rw65okLhdeKeYJhQGWgbBvASgR2g/pub?gid=2078857363&single=true&output=csv';
+
+    // Guest data (loaded from Google Sheet)
+    let guests = [];
+
+    // Parse CSV text into guest objects
+    function parseCSV(csv) {
+      const lines = csv.split('\n');
+      const result = [];
+
+      for (let i = 1; i < lines.length; i++) { // Skip header row
+        const line = lines[i].trim();
+        if (!line) continue;
+
+        // Parse CSV handling quoted fields with commas
+        const fields = [];
+        let current = '';
+        let inQuotes = false;
+
+        for (let j = 0; j < line.length; j++) {
+          const char = line[j];
+          if (char === '"') {
+            inQuotes = !inQuotes;
+          } else if (char === ',' && !inQuotes) {
+            fields.push(current.trim());
+            current = '';
+          } else {
+            current += char;
+          }
+        }
+        fields.push(current.trim());
+
+        const [name, side, group, table] = fields;
+        if (!name) continue;
+
+        result.push({
+          name: name,
+          sides: side ? side.split(',').map(s => s.trim()) : [],
+          groups: group ? group.split(',').map(g => g.trim()) : [],
+          table: table || ''
+        });
+      }
+
+      return result;
+    }
+
+    // Load guests from Google Sheet
+    async function loadGuests() {
+      const container = document.getElementById('tables-container');
+      container.innerHTML = '<p style="text-align: center; color: #666;">Loading guest list...</p>';
+
+      try {
+        const response = await fetch(SHEET_URL);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const csv = await response.text();
+        guests = parseCSV(csv);
+        renderGroupPills();
+        renderTablePills();
+        renderTables();
+      } catch (error) {
+        container.innerHTML = '<p style="text-align: center; color: #666;">Unable to load guest list. Please try refreshing.</p>';
+        console.error('Error loading guests:', error);
+      }
+    }
 
     // State
     let currentSide = 'all';
@@ -568,10 +402,8 @@
       renderTables();
     });
 
-    // Initial render
-    renderGroupPills();
-    renderTablePills();
-    renderTables();
+    // Initial load
+    loadGuests();
   </script>
 </body>
 </html>
