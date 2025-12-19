@@ -101,7 +101,16 @@
           </div>
         </div>
 
+        <div class="filter-group">
+          <span class="filter-label">Filter by Table</span>
+          <div class="filter-pills" id="table-filters">
+            <button class="pill active" data-table="all">All</button>
+          </div>
+        </div>
+
         <input type="text" id="guest-search" placeholder="Search by name...">
+
+        <button id="clear-filters" class="clear-filters-btn"><span class="x-icon">✕</span> Clear all filters</button>
       </div>
 
       <div class="tables-grid" id="tables-container"></div>
@@ -393,6 +402,7 @@
     // State
     let currentSide = 'all';
     let currentGroup = 'all';
+    let currentTable = 'all';
     let searchTerm = '';
 
     // Build group filter pills based on current side
@@ -421,12 +431,53 @@
       currentGroup = 'all';
     }
 
+    // Build table filter pills based on current side and group
+    function renderTablePills() {
+      const tableFilters = document.getElementById('table-filters');
+
+      // Filter guests by current side and group
+      let filteredGuests = guests;
+      if (currentSide !== 'all') {
+        filteredGuests = filteredGuests.filter(g => g.sides.includes(currentSide));
+      }
+      if (currentGroup !== 'all') {
+        filteredGuests = filteredGuests.filter(g => g.groups.includes(currentGroup));
+      }
+
+      // Get unique tables from filtered guests
+      const availableTables = [...new Set(filteredGuests.map(g => g.table))].sort((a, b) => {
+        if (a === 'VIP') return -1;
+        if (b === 'VIP') return 1;
+        return parseInt(a) - parseInt(b);
+      });
+
+      // Rebuild pills
+      tableFilters.innerHTML = '<button class="pill active" data-table="all">All</button>';
+      availableTables.forEach(table => {
+        const btn = document.createElement('button');
+        btn.className = 'pill';
+        btn.dataset.table = table;
+        btn.textContent = table;
+        tableFilters.appendChild(btn);
+      });
+
+      // Reset table selection
+      currentTable = 'all';
+    }
+
+    // Show/hide clear button based on active filters
+    function updateClearButton() {
+      const hasFilters = currentSide !== 'all' || currentGroup !== 'all' || currentTable !== 'all' || searchTerm !== '';
+      document.getElementById('clear-filters').classList.toggle('visible', hasFilters);
+    }
+
     // Filter logic
     function matchesFilters(guest) {
       const matchesSide = currentSide === 'all' || guest.sides.includes(currentSide);
       const matchesGroup = currentGroup === 'all' || guest.groups.includes(currentGroup);
+      const matchesTable = currentTable === 'all' || guest.table === currentTable;
       const matchesSearch = searchTerm === '' || guest.name.toLowerCase().includes(searchTerm.toLowerCase());
-      return matchesSide && matchesGroup && matchesSearch;
+      return matchesSide && matchesGroup && matchesTable && matchesSearch;
     }
 
     function highlightName(name) {
@@ -466,6 +517,7 @@
     // Event listeners
     document.getElementById('guest-search').addEventListener('input', e => {
       searchTerm = e.target.value;
+      updateClearButton();
       renderTables();
     });
 
@@ -475,6 +527,8 @@
         e.target.classList.add('active');
         currentSide = e.target.dataset.side;
         renderGroupPills();
+        renderTablePills();
+        updateClearButton();
         renderTables();
       }
     });
@@ -484,12 +538,39 @@
         document.querySelectorAll('#group-filters .pill').forEach(p => p.classList.remove('active'));
         e.target.classList.add('active');
         currentGroup = e.target.dataset.group;
+        renderTablePills();
+        updateClearButton();
         renderTables();
       }
     });
 
+    document.getElementById('table-filters').addEventListener('click', e => {
+      if (e.target.classList.contains('pill')) {
+        document.querySelectorAll('#table-filters .pill').forEach(p => p.classList.remove('active'));
+        e.target.classList.add('active');
+        currentTable = e.target.dataset.table;
+        updateClearButton();
+        renderTables();
+      }
+    });
+
+    document.getElementById('clear-filters').addEventListener('click', () => {
+      currentSide = 'all';
+      currentGroup = 'all';
+      currentTable = 'all';
+      searchTerm = '';
+      document.getElementById('guest-search').value = '';
+      document.querySelectorAll('#side-filters .pill').forEach(p => p.classList.remove('active'));
+      document.querySelector('#side-filters .pill[data-side="all"]').classList.add('active');
+      renderGroupPills();
+      renderTablePills();
+      updateClearButton();
+      renderTables();
+    });
+
     // Initial render
     renderGroupPills();
+    renderTablePills();
     renderTables();
   </script>
 </body>
