@@ -19,13 +19,19 @@ Photographer & Videographer Presentations
 1430
 Speech by the Couple
 1445
-Short Film & Live Music Video
+Short Film Premiere & Live Music Video
 1500
-Open Mic Performances
+Open Mic
 1600
 Event End
 1600+
-Venue remains open: Karaoke, dance floor, games, artist alley, chill
+Venue remains open: Karaoke, dance floor, chill
+
+Useful Information
+- Parking: Free valet parking is available for all guests.
+- Museum Stamp Rally: Collect your stamp sheet at registration, and visit all 8 of our museum exhibits to collect all stamps!
+- Artist Alley: Visit our art fair & merchandise store at the registration counter! Opens 11:00am–12:00pm and 3:00pm–4:00pm.
+- Redeem Gifts: Open the fortune cookie at your seat for a free gift! Redeem at Artist Alley during opening hours. Unredeemed items may be released after 4:00pm.
 
 # Floorplan
 <floorplan.pdf>
