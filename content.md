@@ -35,14 +35,32 @@ Venue remains open: Karaoke, dance floor, games, artist alley, chill
 
 # Menu
 
-Course Meals
-(Served between 12pm-)
+Drinks
+(Available from 11:00am)
+Alcoholic and Non-alcoholic Drinks Available
+Visit our Cocktail Bar!
 
-Canapes
-(Available between ??-??)
+Canapés
+(Available from 11:00am)
+Duology Mushroom Crostini
+Miniature Chicken Charcoal Half Burger
+Hokkaido Seared Scallop on Herb Crouton
+Smoked Duck Taquito on Onion Marmalade
+Petit Four Butter Cake
+Minted Mango Pudding
+
+7-Course Lunch Menu
+(Lunch is served from 12:30pm)
+Five Blessings Platter 同心结合五福拼
+Double-Boiled Chicken Soup with Dried Scallops & Matsutake Mushrooms 姬松茸干贝鸡汤
+Steam Deep-Sea Giant Grouper 清蒸深海龙虎斑
+Wok-Fried King Prawns in Premium Soy Sauce 爆炒豉油皇大虾
+Braised Abalone with Mushrooms 鲍鱼冬淋羊肚菌
+Emperor Golden Treasure Pot 文昌帝皇金聚盆
+Snow Fungus & Longan Dessert 冰糖雪耳龙眼水
 
 Desserts
-(Available between ??-??)
-
-Drinks
-(Available between ??-??)
+(Available from 2:00pm)
+Cendol
+Air Batu Campur (ABC)
+Nyonya Kuih

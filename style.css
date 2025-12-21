@@ -338,6 +338,9 @@ body {
 /* Menu */
 .menu-section {
   margin-bottom: 2rem;
+  padding: 1.25rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
 }
 
 .menu-section:last-child {
@@ -346,24 +349,40 @@ body {
 
 .menu-section h3 {
   font-family: var(--font-display);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 .menu-time {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--color-muted);
   margin-bottom: 1rem;
+  text-align: center;
+  font-style: italic;
 }
 
 .menu-items {
-  font-size: 0.9375rem;
+  font-size: 1rem;
   color: var(--color-text);
+  list-style: none;
+  text-align: center;
 }
 
-.menu-items p {
-  margin-bottom: 0.5rem;
+.menu-items li {
+  padding: 0.125rem 0;
+}
+
+.menu-items-chinese li {
+  padding: 0.5rem 0;
+}
+
+.menu-items .chinese {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-muted);
+  margin-top: 0.125rem;
 }
 
 /* Responsive */
