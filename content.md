@@ -70,3 +70,32 @@ Desserts
 Cendol
 Air Batu Campur (ABC)
 Nyonya Kuih
+
+---
+Vegan menu:
+
+五福喜临门
+Appetizer in Five Combination
+盅仔鲜鱼翅
+Braised Shark Fin Soup
+油浸香鱼片
+Deep-Fried Fish Slice
+四蔬伴斋菜
+Vegetables in Four Combination
+香辣辣子虾
+Spicy Chili Prawn
+冬菇焖鲍鱼
+Braised Abalone with Mushroom
+荷叶糯米饭
+Glutinous Rice in Lotus Leaf
+雪耳炖红枣
+White Fungus with Red Dates
+美点映双辉
+Dessert
+
+Ricotta Peas Tartlet
+Sea-Grapes Salad
+Balsamico Baby-Bello
+Basil Roma-Bruschetta
+Houjicha Cheese Tart
+Minted Mango Pudding

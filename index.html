@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chloe & Shern</title>
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
@@ -144,6 +144,11 @@
 
     <!-- Menu Tab -->
     <section id="menu" class="tab-content">
+      <div class="menu-toggle">
+        <button class="pill active" data-menu="regular">Regular</button>
+        <button class="pill" data-menu="vegan">Vegan</button>
+      </div>
+
       <div class="menu-section">
         <h3>Drinks</h3>
         <p class="menu-time">Available from 11:00am</p>
@@ -153,7 +158,7 @@
         </ul>
       </div>
 
-      <div class="menu-section">
+      <div class="menu-section menu-regular">
         <h3>Canapés</h3>
         <p class="menu-time">Available from 11:00am</p>
         <ul class="menu-items">
@@ -166,8 +171,21 @@
         </ul>
       </div>
 
-      <div class="menu-section">
-        <h3>7-Course Lunch Menu</h3>
+      <div class="menu-section menu-vegan menu-hidden">
+        <h3>Canapés</h3>
+        <p class="menu-time">Available from 11:00am</p>
+        <ul class="menu-items">
+          <li>Ricotta Peas Tartlet</li>
+          <li>Sea-Grapes Salad</li>
+          <li>Balsamico Baby-Bello</li>
+          <li>Basil Roma-Bruschetta</li>
+          <li>Houjicha Cheese Tart</li>
+          <li>Minted Mango Pudding</li>
+        </ul>
+      </div>
+
+      <div class="menu-section menu-regular">
+        <h3>Lunch Menu</h3>
         <p class="menu-time">Served from 12:30pm</p>
         <ul class="menu-items menu-items-chinese">
           <li>Five Blessings Platter<span class="chinese">同心结合五福拼</span></li>
@@ -177,6 +195,22 @@
           <li>Braised Abalone with Mushrooms<span class="chinese">鲍鱼冬淋羊肚菌</span></li>
           <li>Emperor Golden Treasure Pot<span class="chinese">文昌帝皇金聚盆</span></li>
           <li>Snow Fungus & Longan Dessert<span class="chinese">冰糖雪耳龙眼水</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-section menu-vegan menu-hidden">
+        <h3>Lunch Menu</h3>
+        <p class="menu-time">Served from 12:30pm</p>
+        <ul class="menu-items menu-items-chinese">
+          <li>Appetizer in Five Combination<span class="chinese">五福喜临门</span></li>
+          <li>Braised Shark Fin Soup<span class="chinese">盅仔鲜鱼翅</span></li>
+          <li>Deep-Fried Fish Slice<span class="chinese">油浸香鱼片</span></li>
+          <li>Vegetables in Four Combination<span class="chinese">四蔬伴斋菜</span></li>
+          <li>Spicy Chili Prawn<span class="chinese">香辣辣子虾</span></li>
+          <li>Braised Abalone with Mushroom<span class="chinese">冬菇焖鲍鱼</span></li>
+          <li>Glutinous Rice in Lotus Leaf<span class="chinese">荷叶糯米饭</span></li>
+          <li>White Fungus with Red Dates<span class="chinese">雪耳炖红枣</span></li>
+          <li>Dessert<span class="chinese">美点映双辉</span></li>
         </ul>
       </div>
 
@@ -440,6 +474,22 @@
       renderTablePills();
       updateClearButton();
       renderTables();
+    });
+
+    // Menu toggle (Regular/Vegan)
+    document.querySelector('.menu-toggle').addEventListener('click', e => {
+      if (e.target.classList.contains('pill')) {
+        document.querySelectorAll('.menu-toggle .pill').forEach(p => p.classList.remove('active'));
+        e.target.classList.add('active');
+        const menuType = e.target.dataset.menu;
+
+        document.querySelectorAll('.menu-regular').forEach(el => {
+          el.classList.toggle('menu-hidden', menuType !== 'regular');
+        });
+        document.querySelectorAll('.menu-vegan').forEach(el => {
+          el.classList.toggle('menu-hidden', menuType !== 'vegan');
+        });
+      }
     });
 
     // Initial load
