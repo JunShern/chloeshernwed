@@ -240,6 +240,24 @@ body {
   }
 }
 
+.memory-card {
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.memory-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.memory-card p {
+  color: var(--color-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
 /* Floorplan */
 .floorplan {
   margin-bottom: 2rem;
